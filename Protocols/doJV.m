@@ -121,7 +121,7 @@ if option ==2 || option ==3
     
     disp('JV scan complete.')
     
-    JVsol.stats = dfana.JVstats(JVsol);
+    %JVsol.stats = dfana.JVstats(JVsol);
 end
 toc
 end
