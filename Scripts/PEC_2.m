@@ -27,8 +27,8 @@ hold off
 %% Perform dark and light current-voltage scan at 50 mVs-1 from 0 V to 1.2 V
 % Input arguments: 
 % sol_CV = doCV(sol_ini, light_intensity, V0, Vmax, Vmin, scan_rate, cycles, tpoints)
-CVsol_dk = doCV(soleq.ion, 0, 0, 0.6, -0.4, 1, 2, 400);
-CVsol_1sun = doCV(soleq.ion, 1, 0, 0.6, -0.4, 1, 2, 400);
+CVsol_dk = doCV(soleq.ion, 0, -0.5, -0.2, -0.8, 0.01, 2, 400);
+CVsol_1sun = doCV(soleq.ion, 1, -0.5, -0.2, -0.8, 0.01, 2, 400);
 
 %% Plot the current voltage curve
 dfplot.JtotVapp(CVsol_dk, 0)
